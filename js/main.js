@@ -9,8 +9,8 @@ let send = document.getElementById("send").addEventListener("click", () => {
     let namePage = document.getElementById("namePage").value;
     let link = document.getElementById("linkPage").value;
 
-    let resultado = '<p>' + lastname + ', ' + name.charAt(0) + '.' + '(' + fecha + ').' +
-        '<i>' + title + '.</i>' + namePage + '. ' + link;
+    let resultado = '<p>' + lastname + ', ' + name.charAt(0) + '.' + '(' + fecha + '). ' +
+        '<i>' + title + '.</i> ' + namePage + '. ' + link;
 
 
     document.getElementById("resultado").innerHTML = resultado;
