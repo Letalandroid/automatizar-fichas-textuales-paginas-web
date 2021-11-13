@@ -3,24 +3,65 @@
     padding: 0;
 }
 
+body {
+    background: #121212;
+}
+
 input {
     width: 280px;
     height: 25px;
-    padding-left: 5px;
+    border: none;
+    color: #fff;
+    background: transparent;
+    border-bottom: 1px solid #fff;
 }
 
-img {
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #fffb;
+    margin-left: 5px;
+}
+
+.icon {
     width: 60px;
     margin: 10px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.grupo-5-logo {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo-5-logo > img {
+    width: 15em;
+    object-fit: cover;
 }
 
 #send {
     width: 60px;
     padding-left: 0;
+    background-color: transparent;
+    outline: 1px solid #fff;
+    border: none;
+    color: #fff;
+}
+
+#send:hover {
+    color: #000;
+    background-color: #fff;
 }
 
 .container {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,21 +76,8 @@ img {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     position: absolute;
     bottom: 5px;
+    color: #fffe;
 }
