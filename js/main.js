@@ -9,10 +9,19 @@ let send = document.getElementById("send").addEventListener("click", () => {
     let namePage = document.getElementById("namePage").value;
     let link = document.getElementById("linkPage").value;
 
-    let resultado = '<p>' + lastname + ', ' + name.charAt(0) + '.' + '(' + fecha + '). ' +
-        '<i>' + title + '.</i> ' + namePage + '. ' + link;
+    if (lastname == "" || name == "" || fecha == "" || title == "" || namePage == "" || link == "") {
+
+        alert("Porfavor, colocar todos lo datos.")
+
+    }
+
+    else {
+
+        let resultado = `<p>${lastname}, ${name.charAt(0)}. (${fecha}). <i>${title}.</i> ${namePage}. ${link}</p>`;
 
 
-    document.getElementById("resultado").innerHTML = resultado;
+        document.getElementById("resultado").innerHTML = resultado;
+
+    }
 
 });

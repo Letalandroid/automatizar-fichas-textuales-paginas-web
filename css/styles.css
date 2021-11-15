@@ -9,8 +9,9 @@ body {
 }
 
 input {
-    width: 280px;
+    width: 320px;
     height: 25px;
+    padding-left: 5px;
     border: none;
     color: #fff;
     background: transparent;
@@ -23,7 +24,6 @@ input:focus {
 
 input::placeholder {
     color: #fffb;
-    margin-left: 5px;
 }
 
 .icon {
